@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/contact_success.css' %}">
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+    <div class="container2">
+        <div class="success-box">
+            <h1>Success!</h1>
+            <p>Your action was Completed successfully.</p>
+            <a href="{%url 'home'%}" class="btn">Go to Homepage</a>
+        </div>
+    </div>
+    {% endblock %}

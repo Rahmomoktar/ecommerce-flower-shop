@@ -1,0 +1,247 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #fcfcfc;
+    text-transform: capitalize;
+    transition: 4s linear;
+   
+}
+
+/* .product{
+    margin-left: 0px;
+
+
+} */
+
+.product h1, span{
+    color: rgb(255, 87, 115);
+    font-family: Arial, sans-serif;
+    
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10rem;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    
+}
+.product h1{
+    color: rgb(0, 0, 0);
+   
+}
+
+.product .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: 2.5rem;
+    margin-right: -10rem;
+    margin-top: -3rem;
+    gap: 2rem;
+   
+}
+
+.product .box-container .box{
+    position: relative;
+    width: 300px;
+    margin: 50px 20px 0px 0px;
+    transition-duration: .9s;
+    
+    margin-right: -1rem;
+    margin-left: 10px;
+    
+    
+
+}
+
+
+.product .box-container .box .image img{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    position: relative;
+    margin-right: 0px;
+    box-shadow: .2rem .2rem 1rem rgb(254, 220, 220);
+   
+    
+
+
+}
+.product .box-container .box .image{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    width: 400px;
+    box-shadow: .2rem .2rem 1rem rgb(254, 220, 220);
+}
+.product .box-container .box:hover .image img{
+    transform: scale(1.1);
+    border-radius: 6px;
+    
+}
+
+.product .box-container .box .image .icons{
+    position: absolute;
+    bottom: -7rem;left: 0;right: 0;
+    display: flex;
+   
+}
+
+
+.product .box-container .box:hover .image .icons {
+    bottom: 40px;
+   
+    
+
+}
+
+
+.product .box-container .box:hover .image .icons a{
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 22px;
+    width: 50%;
+    background-color:  rgba(255, 26, 121, 0.808);
+    color:pink;
+    transition: 0.2s ease;
+    
+} 
+
+
+.product .box-container .box:hover .image .icons a:hover{
+    background:  black;
+   padding: 0px;
+   transition: 0.2s ease;
+
+}
+
+.product .box-container .box:hover .image .icons .cart-btn{
+    border-left: 2px solid #fff7;
+    border-right: 2px solid #fff7;
+    
+    
+   
+}
+
+
+.product .box-container .box .discount{
+    position: absolute;
+    left: 2rem;top: -9rem;
+    padding: .2rem .6rem;
+    font-size: 18px;
+    color: pink;
+    background: rgb(247, 46, 79);
+    z-index: 1;
+    border-radius: .8rem;
+    
+}
+
+.product .box-container .box .content{
+  padding-bottom: 40px;
+    text-align: center;
+    margin-bottom: -70px;
+}
+.product .box-container .box .content h3{
+    font-size: 2rem;
+    color: rgb(255, 86, 114);
+   
+}
+
+.product .box-container .box .content .price{
+    font-size: 1.5rem;
+    color: var(pink);
+    font-weight: bolder;
+    padding-top: 0.5rem;
+
+}
+
+.product .box-container .box .content .price span{
+    font-size: 1.4rem;
+    color: #999;
+    font-weight: lighter;
+    text-decoration: line-through;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem 0;
+    flex-wrap: wrap;
+    pad: 2rem 0;
+    margin-top: 5rem;
+    
+    
+}
+
+.about .row .vedio-container{
+    flex: 1 1 40rem;
+    position: relative;
+    margin-left: 20px;
+
+}
+
+.about .row .vedio-container video{
+    width: 100%;
+    border: .5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgb(255, 186, 186);
+    object-fit: cover;
+    
+}
+.about .row .vedio-container h3{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    background: #fff;
+    color: rgb(223, 24, 87);
+    width: 100%;
+    padding: .5rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+
+
+}
+
+.about .row .content{
+    flex: 1 1 40rem;
+    margin-left: 2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: #333;
+
+}
+.about .row .content p{
+    font-size: 1.5rem;
+    color: #999;
+    padding: 1rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+    
+}
+
+.about .row .content a{
+    margin-top: 1rem;
+    display: inline-block;
+    background: rgb(0, 0, 0);
+    color: pink;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4rem;
+    font-weight: 20px;
+    transition: 0.9s ease;
+    
+}
+.about .row .content a:hover{
+    background: rgb(255, 148, 183);
+    transform: scale(1.1);
+    color: white;
+    
+}

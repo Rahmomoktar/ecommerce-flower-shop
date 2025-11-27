@@ -1,0 +1,25 @@
+{%extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+    <div class="container">
+        <h1>Booking List</h1>
+       
+        <ul>
+            {% for booking in bookings %}
+                <li>
+                    {{ booking.name }} - {{ booking.date }}
+                    <a href="{% url 'booking_create' %}" class="adicon"><i class="fa fa-plus"></i></a>
+                    <a href="{% url 'booking_update' booking.pk %}" class="
+                    uppicon"><i class="fa fa-edit"></i> </a>
+                    <a href="{% url 'booking_delete' booking.pk %}" class="dicon"> <i class="fa fa-trash"></i></a>
+                   
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
+

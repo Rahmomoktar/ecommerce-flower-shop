@@ -1,0 +1,106 @@
+{%extends 'base.html'%}
+{% load static %}
+
+
+{% block content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+<!-- start home sectin -->
+<section class="home" id="home">
+   
+    <div class="content">
+        <h3 style="color: rgb(245, 78, 133); font-weight: bolder;font-size: 5rem;">Fresh Flowers</h3>
+        <span style="color: #333;font-weight: 8rem;font-size: 3rem; margin-left: 2rem;" >Natural and beautiful</span>
+        <p style="font-size: 1.8rem;color: rgb(216, 168, 176); text-align: justify;">Fresh flowers are an instant mood booster and can brighten up any room.They add color,texture and life to your home,creating welcoming atmosphere for you and your guests. </p>
+        <a href="{%url 'products'%}" class="btn">Shop Now</a>
+    </div>
+    <img src="{% static 'images/fri.jpg'%}" alt="" style="width: 72%;margin-top: 6rem;margin-right: -17rem;height: 59rem;">
+  </section>
+  <!-- end home sectin -->
+
+  
+  <div class="continer">
+    <div class="Services_wellprer">
+        <div class="Services" >
+            <h1 style="background-color: white;font-size: 5rem;margin-top: -3rem;color: #333;">Our Services <span></span></h1>
+            <div class="cords">
+            <div class="cords2">
+                <i class=" fa-solid fas fa-leaf"></i>
+                <h2>Wedding Flowers</h2>
+                <p>Comprehensive floral services for weddings, including bridal bouquets, boutonnieres, and floral decorations for the ceremony and reception.</p>
+            </div>
+            <div class="cords2">
+                <i class="fa-solid fas fa-truck"></i>
+                <h2>Flower Delivery:</h2>
+                <p>Local and sometimes international delivery services to ensure flowers reach their destination fresh and on time.</p>
+            </div>
+            <div class="cords2">
+                <i class="fa-solid fa-user-group"></i>
+                <h2>Event Flowers</h2>
+                <p>Floral decorations for corporate events, parties, galas, and other gatherings. This includes centerpieces, stage decorations, and themed arrangements.</p>
+            </div>
+            <div class="cords2">
+                <i class="fas fa-store"></i>
+                <h2>Floral Workshops</h2>
+                <p>Educational sessions where customers can learn about flower arranging, plant care, and other related topics.</p>
+            </div>
+            <div class="cords2">
+                <i class="fas fa-pencil-ruler"></i>
+                <h2>Custom Designs</h2>
+                <p>Personalized floral arrangements tailored to individual preferences, including specific flower types, colors, and styles.</p>
+            </div>
+            <div class="cords2">
+                <i class="fas fa-seedling"></i>
+                <h2>Fresh Flowers</h2>
+                <p>Custom and pre-designed floral arrangements for various occasions such as birthdays, anniversaries,graduations special events.</p>
+            </div>
+
+
+        </div>
+       
+    </div>
+
+
+</div>
+</div>
+
+<footer style=" background-color:  #8a7272;">
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h2>About Us</h2>
+            <p>We are a company dedicated to providing the best services and products to our customers. Our mission is to improve the quality of life through innovation and excellence.</p>
+        </div>
+        <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li style="margin-left: 5rem;"><a href="#" style="margin-left: 5rem;"><i class="fas fa-home" style="margin-left: 5rem;"></i> Home</a></li>
+                <li style="margin-left: 5rem;"><a href="#" style="margin-left: 5rem;"><i class="fas fa-info-circle" style="margin-left: 5rem;"></i> About</a></li>
+                <li style="margin-left: 5rem;"><a href="#" style="margin-left: 5rem;"><i class="fas fa-cogs" style="margin-left: 5rem;"></i> Services</a></li>
+                <li style="margin-left: 5rem;"><a href="#" style="margin-left: 5rem;"><i class="fas fa-phone-alt" style="margin-left: 5rem;"></i> Contact</a></li>
+                <li style="margin-left: 5rem;"><a href="#" style="margin-left: 5rem;"><i class="fas fa-blog" style="margin-left: 5rem;"></i> Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <ul>
+                <li style="margin-left: 7rem"><i class="fas fa-map-marker-alt" style="margin-left: 7rem"></i> 1234 Street, City, Country</li>
+                <li  style="margin-left: 7rem"><i class="fas fa-phone-alt"  style="margin-left: 7rem"></i> (123) 456-7890</li>
+                <li  style="margin-left: 7rem"><i class="fas fa-envelope"  style="margin-left: 7rem"></i> info@example.com</li>
+            </ul>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom" style="border-top: 1px solid #ffffff;">
+        &copy; 2024 Company Name. All rights reserved.
+    </div>
+</footer>
+
+
+  {% endblock %}

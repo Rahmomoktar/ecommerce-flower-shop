@@ -1,0 +1,14 @@
+{%extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static css/oder.css%}">
+
+    <h1>Order Detail</h1>
+    <p>Customer Name: {{ order.customer_name }}</p>
+    <p>Product Name: {{ order.product_name }}</p>
+    <p>Quantity: {{ order.quantity }}</p>
+    <p>Order Date: {{ order.order_date }}</p>
+    <a href="{% url 'order_list' %}" class="back-link">Back to Order List</a>
+{% endblock %}

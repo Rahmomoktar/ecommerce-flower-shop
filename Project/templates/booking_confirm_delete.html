@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+    <div class="container">
+        <h1>Confirm Delete</h1>
+        <p style="font-size: 1.5rem;margin-top: 1rem;">Are you sure you want to delete "{{ booking.name }}"?</p>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit">Confirm</button>
+        </form>
+        <a href="{% url 'booking_list' %}">Cancel</a>
+    </div>
+{% endblock %}

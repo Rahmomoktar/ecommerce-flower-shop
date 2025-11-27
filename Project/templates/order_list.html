@@ -1,0 +1,18 @@
+{%extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/oder.css' %}">
+    <h1>Order List</h1>
+    <a href="{% url 'order_create' %}" class="back-link">Create new order</a>
+    <ul>
+        {% for order in orders %}
+            <li>
+                <a href="{% url 'order_detail' order.pk %}">{{ order.customer_name }} - {{ order.product_name }}</a>
+                (<a href="{% url 'order_update' order.pk %}" class="icon"><i class="fa fa-edit" style="font-style: 1.5rem;"></i></a>,
+                <a href="{% url 'order_delete' order.pk %}" class="icon"><i class="fa fa-trash" style="font-size: 1.5rem;"></i></a>)
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

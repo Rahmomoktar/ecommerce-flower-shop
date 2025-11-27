@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color:rgb(255, 228, 232);
+}
+
+
+h1 {
+    color: #000000;
+    font-size: 3rem;
+    margin-top: 20rem;
+    
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-family: sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 14px 0;
+}
+
+button {
+    background-color: pink;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b30086;
+}
+
+form {
+    max-width: 400px;
+    margin-top: 2rem;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form p {
+    margin: 10px 0;
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.input::before {
+    content: '\2190'; /* Unicode for left arrow */
+    margin-right: 10px;
+}
+
+.input:hover {
+    background-color: #e0e0e0;
+}
+
+.input:active {
+    background-color: #d0d0d0;
+}
+
+.back-link {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: pink;
+    color: white;
+    border-radius: 5px;
+}
+
+.back-link:hover {
+    background-color: palevioletred;
+}

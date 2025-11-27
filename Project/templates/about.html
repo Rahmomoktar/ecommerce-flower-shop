@@ -1,0 +1,72 @@
+{%extends 'base.html'%}
+{% load static %}
+
+
+{% block content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+
+
+ <section class="hero">
+    <div class="heading">
+        <h1>About Us</h1>
+    </div>
+    <div class="container" style="background-color: #fee8e8;">
+        <div class="hero-content">
+            <h2>Welcome To Our Website</h2>
+            <p>Hello! My Dear customer welcome to our Webaite's about,I'm very happy with your visiting I wish you to find more about us and more about our Services.</p>
+            <a href="product.html"><button class="cta-button">More Details</button></a>
+
+            <div class="media">
+                <a href="https://www.facebook.com/rahma.moktar.1/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/amaaay_m.oomar?igsh=dWRsbjhmdDNjbW5v"><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-whatsapp"></i></a>
+            </div>
+            
+        </div>
+        <div class="hero-image">
+            <img src="{% static 'images/f1.jpg'%}" alt="">
+        </div>
+    </div>
+
+</section>
+
+
+<footer style=" background-color:  #8a7272;">
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h2>About Us</h2>
+            <p>We are a company dedicated to providing the best services and products to our customers. Our mission is to improve the quality of life through innovation and excellence.</p>
+        </div>
+        <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li style="margin-left: 5rem;"><a href="{% url 'home'%}" style="margin-left: 5rem;"><i class="fas fa-home" style="margin-left: 5rem;"></i> Home</a></li>
+                <li style="margin-left: 5rem;"><a href="{% url 'about'%}" style="margin-left: 5rem;"><i class="fas fa-info-circle" style="margin-left: 5rem;"></i> About</a></li>
+                <li style="margin-left: 5rem;"><a href="{% url 'products'%}" style="margin-left: 5rem;"><i class="fas fa-cogs" style="margin-left: 5rem;"></i> N.Products</a></li>
+                <li style="margin-left: 5rem;"><a href="{% url 'contact_us'%}" style="margin-left: 5rem;"><i class="fas fa-phone-alt" style="margin-left: 5rem;"></i> Contact</a></li>
+                <li style="margin-left: 5rem;"><a href="{% url 'SpecialFlower'%}" style="margin-left: 5rem;"><i class="fas fa-blog" style="margin-left: 5rem;"></i>S.Products</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <ul>
+                <li  style="margin-left: 7rem"><i class="fas fa-map-marker-alt"  style="margin-left: 7rem"></i> 26 juun, hargeisa, somaliland</li>
+                <li  style="margin-left: 7rem"><i class="fas fa-phone-alt"  style="margin-left: 7rem"></i> (252) 637335105</li>
+                <li  style="margin-left: 7rem"><i class="fas fa-envelope"  style="margin-left: 7rem"></i> Ama122@gmail.com</li>
+            </ul>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom" style="border-top: 1px solid #ffffff;">
+        &copy; 2024 Company Name. All rights reserved.
+    </div>
+</footer>
+
+{% endblock %}

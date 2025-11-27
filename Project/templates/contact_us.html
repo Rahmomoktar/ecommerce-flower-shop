@@ -1,0 +1,78 @@
+{%extends 'base.html'%}
+{% load static %}
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/Contact_Us.css' %}">
+
+<div class="rows">
+    <div class="row1">
+        <h1 style="margin-left:8rem;">Contact <span>with</span> us</h1>
+    </div>
+    
+
+    <div class="row2">
+        
+        <h1 class="contact" style="font-size: 3rem;">Please <span style="font-size: 3rem">Send us </span> a Message <span style="font-size: 3rem"><br> here.</span></h1>
+        <div class="form">
+            <!-- <form action="POST"> -->
+                <form action="{% url 'contact_us' %}" method="post">
+
+                {% csrf_token %}
+                {{form.as_p}}
+                <button type="submit" style=" background-color:rgb(219, 95, 136);
+                border-color: rgb(0, 0, 0);
+                padding: 10px 20px;
+                border-radius: 3rem;
+                color: white;
+                cursor: pointer;
+                margin-bottom: 3rem;
+                margin-left: 5rem;">Send</button>
+            </form>
+            
+        </div>
+       
+      
+        
+    </div>
+</div>
+<img src="{% static 'images/ct.jpg'%}" alt="" style="width: 50%;margin-right: 70rem;margin-top: -55rem;animation: fadeInRight 2s ease;">
+
+
+  <footer  style=" background-color:  #8a7272;">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>We are a company dedicated to providing the best services and products to our customers. Our mission is to improve the quality of life through innovation and excellence.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul style="margin-right: -5rem;">
+                    <li style="margin-left: 5rem;"><a href="#" style="margin-left: 5rem;"><i class="fas fa-home" style="margin-left: 5rem;"></i> Home</a></li>
+                    <li style="margin-left: 5rem;"><a href="#" style="margin-left: 5rem;"><i class="fas fa-info-circle" style="margin-left: 5rem;"></i> About</a></li>
+                    <li style="margin-left: 5rem;"><a href="#" style="margin-left: 5rem;"><i class="fas fa-cogs" style="margin-left: 5rem;"></i> Services</a></li>
+                    <li style="margin-left: 5rem;"><a href="#" style="margin-left: 5rem;"><i class="fas fa-phone-alt" style="margin-left: 5rem;"></i> Contact</a></li>
+                    <li style="margin-left: 5rem;"><a href="#" style="margin-left: 5rem;"><i class="fas fa-blog" style="margin-left: 5rem;"></i> Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li style="margin-left: 7rem"><i class="fas fa-map-marker-alt" style="margin-left: 7rem"></i> 1234 Street, City, Country</li>
+                    <li style="margin-left: 7rem"><i class="fas fa-phone-alt" style="margin-left: 7rem"></i> (123) 456-7890</li>
+                    <li style="margin-left: 7rem"><i class="fas fa-envelope" style="margin-left: 7rem"></i> info@example.com</li>
+                </ul>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom" style="border-top: 1px solid #ffffff;">
+            &copy; 2024 Company Name. All rights reserved.
+        </div>
+    </footer>
+ 
+{% endblock %}

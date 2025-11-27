@@ -1,0 +1,400 @@
+{%extends 'base.html'%}
+{% load static %}
+
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/products.css' %}">
+
+
+<!-- icons section -->
+<section class="product" id="products">
+    <h1>Latest <span>Products</span></h1> 
+    <div class="box-container" style="margin-left: -10rem;"> 
+        <div class="box" >
+            <span class="discount">-10%</span>
+            <div class="image">
+                <img src="{% static 'images/onee.jpg'%}" alt="" style="width: 300px;margin-left: 15px;border-radius: 9px;">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart" ></a>
+                    <a href="{%url 'order_list'%}" class="cart-btn">Order Now</a>
+                    <a href="#" class="fas fa-share" style="margin-right: 35px;"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Flower pot</h3>
+                <div class="price">$5.99 <span>$10.99</span></div>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-5%</span>
+            <div class="image">
+                <img src="{% static 'images/two.jpg'%}" alt="" style="width: 300px;margin-left: 15px;border-radius: 9px;">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="{%url 'order_list'%}" class="cart-btn">Order Now</a>
+                    <a href="#" class="fas fa-share" style="margin-right: 35px;"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Flower pot</h3>
+                <div class="price">$7.99 <span>$14.99</span></div>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-6%</span>
+            <div class="image">
+                <img src="{% static 'images/four.jpg'%}" alt=""style="width: 300px;margin-left: 15px;border-radius: 9px;" >
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="{%url 'order_list'%}" class="cart-btn">Order Now</a>
+                    <a href="#" class="fas fa-share" style="margin-right: 35px;"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Flower pot</h3>
+                <div class="price">$10.99<span>$17.99</span></div>
+
+            </div>
+        </div>
+
+        
+        
+        <div class="box">
+            <span class="discount" style="margin-left: 10px;">-8%</span>
+            <div class="image">
+                <img src="{% static 'images/three.jpg'%}" alt="" style="width: 300px;margin-left: 25px;border-radius: 9px;">
+                <div class="icons" style="width: 85%;">
+                    <a href="#" class="fas fa-heart" style="margin-left: 10px;"></a>
+                    <a href="{%url 'order_list'%}" class="cart-btn" style="font-size: 20px;">Order Now</a>
+                    <a href="#" class="fas fa-share" ></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Flower pot</h3>
+                <div class="price">$6.99 <span>$13.99</span></div>
+
+            </div>
+        </div>
+        
+        
+    </div>
+</section>
+
+
+
+
+
+<section class="product" id="products" >
+   
+    <div class="box-container"style="margin-left: -10rem;"> 
+        <div class="box" >
+            <span class="discount">-10%</span>
+            <div class="image">
+                <img src="{% static 'images/1.jpg'%}" alt="" style="width: 300px;margin-left: 15px;border-radius: 9px;">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart" ></a>
+                    <a href="{%url 'order_list'%}" class="cart-btn">Order Now</a>
+                    <a href="#" class="fas fa-share" style="margin-right: 35px;"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Flower pot</h3>
+                <div class="price">$5.99 <span>$10.99</span></div>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-5%</span>
+            <div class="image">
+                <img src="{% static 'images/2.jpg'%}" alt="" style="width: 300px;margin-left: 15px;border-radius: 9px;">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="{%url 'order_list'%}" class="cart-btn">Order Now</a>
+                    <a href="#" class="fas fa-share" style="margin-right: 35px;"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Flower pot</h3>
+                <div class="price">$7.99 <span>$14.99</span></div>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-6%</span>
+            <div class="image">
+                <img src="{% static 'images/3.jpg'%}" alt=""style="width: 300px;margin-left: 15px;border-radius: 9px;" >
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="{%url 'order_list'%}" class="cart-btn">Order Now</a>
+                    <a href="#" class="fas fa-share" style="margin-right: 35px;"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Flower pot</h3>
+                <div class="price">$10.99<span>$17.99</span></div>
+
+            </div>
+        </div>
+
+        
+        <div class="box">
+            <span class="discount" style="margin-left: 10px;">-8%</span>
+            <div class="image">
+                <img src="{% static 'images/4.jpg'%}" alt="" style="width: 300px;margin-left: 25px;border-radius: 9px;">
+                <div class="icons" style="width: 85%;">
+                    <a href="#" class="fas fa-heart" style="margin-left: 10px;"></a>
+                    <a href="{%url 'order_list'%}" class="cart-btn" style="font-size: 20px;">Order Now</a>
+                    <a href="#" class="fas fa-share" ></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Flower pot</h3>
+                <div class="price">$6.99 <span>$13.99</span></div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="product" id="products" style="margin-left: -10rem;">
+    <h1 style="margin-top: 20px;margin-left: 80px;">Laxuary <span style="margin-top: 80px;">Red Flowers</span></h1> 
+    <div class="box-container"> 
+        <div class="box" >
+            
+            <div class="image">
+                <img src="{% static 'images/5.jpg'%}" alt="" style="width: 300px;margin-left: 15px;border-radius: 9px;">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart" ></a>
+                    <a href="{%url 'order_list'%}" class="cart-btn" >Order Now</a>
+                    <a href="#" class="fas fa-share" style="margin-right: 35px;"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Flower pot</h3>
+                <div class="price">$5.99 </div>
+
+            </div>
+        </div>
+
+        <div class="box">
+           
+            <div class="image">
+                <img src="{% static 'images/6.jpg'%}" alt="" style="width: 300px;margin-left: 15px;border-radius: 9px;">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart" ></a>
+                    <a href="{%url 'order_list'%}" class="cart-btn">Order Now</a>
+                    <a href="#" class="fas fa-share" style="margin-right: 35px;"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Flower pot</h3>
+                <div class="price">$7.99 </span></div>
+
+            </div>
+        </div>
+
+        <div class="box">
+           
+            <div class="image">
+                <img src="{% static 'images/8.jpg'%}" alt=""style="width: 300px;margin-left: 15px;border-radius: 9px;" >
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="{%url 'order_list'%}" class="cart-btn" >Order Now</a>
+                    <a href="#" class="fas fa-share" style="margin-right: 35px;"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Flower pot</h3>
+                <div class="price">$10.99</div>
+
+            </div>
+        </div>
+
+        
+        <div class="box">
+           
+            
+            <div class="image">
+                <img src="{% static 'images/7.jpg'%}" alt="" style="width: 300px;margin-left: 25px;border-radius: 9px;">
+                <div class="icons" style="width: 85%;">
+                    <a href="#" class="fas fa-heart" style="margin-left: 10px;"></a>
+                    <a href="{%url 'order_list'%}" class="cart-btn" style="font-size: 20px;">Order Now</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Flower pot</h3>
+                <div class="price">$6.99</div>
+
+            </div>
+        </div>
+
+        
+        
+    </div>
+</section>
+
+
+<!-- dollar design -->
+ 
+<section class="product" id="products"style="margin-left: -10rem;">
+    <h1 style="margin-top: 40px;margin-left: 9rem;">Money <span style="margin-top: 100px;">Flowers bouquets</span></h1> 
+    <div class="box-container"> 
+        <div class="box" >
+            
+            <div class="image">
+                <img src="{% static 'images/d6.jpg'%}" alt="" style="width: 300px;margin-left: 15px;border-radius: 9px;">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart" ></a>
+                    <a href="{%url 'order_list'%}" class="cart-btn" >Order Now</a>
+                    <a href="#" class="fas fa-share" style="margin-right: 35px;"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Flower pot</h3>
+                <div class="price">$5.99 </div>
+
+            </div>
+        </div>
+
+        <div class="box">
+           
+            <div class="image">
+                <img src="{% static 'images/d2.jpg'%}" alt="" style="width: 300px;margin-left: 15px;border-radius: 9px;">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart" ></a>
+                    <a href="{%url 'order_list'%}" class="cart-btn"">Order Now</a>
+                    <a href="#" class="fas fa-share" style="margin-right: 35px;"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Flower pot</h3>
+                <div class="price">$7.99 </span></div>
+
+            </div>
+        </div>
+
+        <div class="box">
+           
+            <div class="image">
+                <img src="{% static 'images/d7.jpg'%}" alt=""style="width: 300px;margin-left: 15px;border-radius: 9px;" >
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="{%url 'order_list'%}" class="cart-btn" >Order Now</a>
+                    <a href="#" class="fas fa-share" style="margin-right: 35px;"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Flower pot</h3>
+                <div class="price">$10.99</div>
+
+            </div>
+        </div>
+
+        
+        <div class="box">
+           
+            
+            <div class="image">
+                <img src="{% static 'images/d4.jpg'%}" style="width: 300px;margin-left: 25px;border-radius: 9px;">
+                <div class="icons" style="width: 85%;">
+                    <a href="#" class="fas fa-heart" style="margin-left: 10px;"></a>
+                    <a href="{%url 'order_list'%}" class="cart-btn" style="font-size: 20px;">Order Now</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Flower pot</h3>
+                <div class="price">$6.99</div>
+
+            </div>
+        </div>
+
+        
+        
+    </div>
+</section>
+
+
+<!-- start Vedio dollar section -->
+<section class="about" id="about" style="margin-left: -10rem;">
+<!-- <h1 class="heading"><span>About</span>Us</h1> -->
+<div class="row">
+    <div class="vedio-container">
+        <video src="{% static 'vedio/v3.mp4'%}" loop autoplay muted style="background-size: full;"></video>
+        <h3 style="font-size: 5rem;">10k Money Bouquet</h3>
+    </div>
+
+    <div class="content">
+        <h3 style="text-align: center;font-size: 4rem;">MONEY BOUQUET</h3>
+        <p style="text-align: center;font-size: 1.8rem;">This eye-catching and unique money bouquet flowers is the perfect gift for any special occasion. The beautiful pink and red colors will make it stand out among any other gift.</p>
+
+        <p style=" text-align: center;font-size: 2rem;color: rgb(233, 138, 169);font-weight: bolder;margin-left: 4rem;">This bouquet is a great way to show you care.</p>
+        <a href="{%url 'order_list'%}" style="margin-left: 25rem;padding: 1.5rem 2rem;font-size: 1.7rem;">Order Now</a>
+    </div>
+</div>
+
+
+</section>
+
+
+<!-- End Vedio dollar section -->
+
+
+<footer style=" background-color:  #8a7272;">
+    <div class="footer-container" style="background-color:  #8a7272;">
+        <div class="footer-section about" style="background-color:  #8a7272;">
+            <h2 style="background-color:  #8a7272;">About Us</h2>
+            <p style="background-color:  #8a7272;">We are a company dedicated to providing the best services and products to our customers. Our mission is to improve the quality of life through innovation and excellence.</p>
+        </div>
+        <div class="footer-section links" style="background-color:  #8a7272;">
+            <h2 style="background-color:  #8a7272;">Quick Links</h2>
+            <ul style="background-color:  #8a7272;">
+                <li style="margin-left: 5rem;background-color:  #8a7272;"><a href="#" style="margin-left: 5rem;background-color:  #8a7272;"><i class="fas fa-home" style="margin-left: 5rem;background-color:  #8a7272;"></i> Home</a></li>
+                <li style="margin-left: 5rem;background-color:  #8a7272;"><a href="#" style="margin-left: 5rem;background-color:  #8a7272;"><i class="fas fa-info-circle" style="margin-left: 5rem;background-color:  #8a7272;"></i> About</a></li>
+                <li style="margin-left: 5rem;background-color:  #8a7272;"><a href="#" style="margin-left: 5rem;background-color:  #8a7272;"><i class="fas fa-cogs" style="margin-left: 5rem;background-color:  #8a7272;"></i> Services</a></li>
+                <li style="margin-left: 5rem; background-color:  #8a7272;"><a href="#" style="margin-left: 5rem;background-color:  #8a7272;"><i class="fas fa-phone-alt" style="margin-left: 5rem;background-color:  #8a7272;"></i> Contact</a></li>
+                <li style="margin-left: 5rem; background-color:  #8a7272;"><a href="#" style="margin-left: 5rem; background-color:  #8a7272;"><i class="fas fa-blog" style="margin-left: 5rem; background-color:  #8a7272;"></i> Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact" style="background-color:  #8a7272;">
+            <h2 style="background-color:  #8a7272;"> Contact Us</h2>
+            <ul style="background-color:  #8a7272;">
+                <li style="background-color:  #8a7272;margin-left: 7rem"><i class="fas fa-map-marker-alt" style="background-color:  #8a7272;margin-left: 7rem"></i> 1234 Street, City, Country</li>
+                <li style="background-color:  #8a7272;margin-left: 7rem"><i class="fas fa-phone-alt" style="background-color:  #8a7272;margin-left: 7rem"></i> (123) 456-7890</li>
+                <li style="background-color:  #8a7272;margin-left: 7rem"><i class="fas fa-envelope" style="background-color:  #8a7272;margin-left: 7rem"></i> info@example.com</li>
+            </ul>
+            <div class="socials" style="background-color:  #8a7272;">
+                <a href="#" style="background-color:  #8a7272;"><i class="fab fa-facebook-f" style="background-color:  #8a7272;"></i></a>
+                <a href="#" style="background-color:  #8a7272;"><i class="fab fa-twitter" style="background-color:  #8a7272;"></i></a>
+                <a href="#" style="background-color:  #8a7272;"><i class="fab fa-instagram" style="background-color:  #8a7272;"></i></a>
+                <a href="#" style="background-color:  #8a7272;"><i class="fab fa-linkedin-in"style="background-color:  #8a7272;" ></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom" style="background-color:  #8a7272; border-top: 1px solid #ffffff;">
+        &copy; 2024 Company Name. All rights reserved.
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

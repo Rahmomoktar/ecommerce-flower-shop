@@ -1,0 +1,19 @@
+{%extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+    <div class="container">
+        <h1>{{ form.instance.pk|yesno:"Update Booking,Create Booking" }}</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">{{ form.instance.pk|yesno:"Update,Create" }}</button>
+        </form>
+        <a href="{% url 'booking_list' %}" class="adicon"><i class="fas fa-arrow-left"></i></a>
+
+        
+    </div>
+{% endblock %}

@@ -1,0 +1,56 @@
+/* Apply general styles to the body and link elements */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: #333;
+    margin-top: 30rem;
+}
+
+a {
+    text-decoration: none;
+    color: pink;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style the link to create a new order */
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    background-color: #0056b3;
+}
+
+/* Style the list of orders */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li a {
+    color: #333;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+/* Optional: Add some styling to the list items */
+li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}

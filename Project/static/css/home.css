@@ -1,0 +1,277 @@
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-size: 100%;
+    background-position:center;
+    width: 100%;
+    
+}
+
+
+
+.home .content{
+    max-width: 50rem;
+    animation: fadeInDown 5s ease;
+    
+    
+    
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color: #333;
+    
+}
+
+.home .content span{
+    font-size: 3.5rem;
+    color: var(--pink);
+    padding: 1rem 0;
+    line-height: 1.5;
+    margin-left: 40px;
+   
+}
+
+.home .content p{
+    font-size: 2rem;
+    color: #999;
+    padding: 1rem 0;
+    line-height: 1.6;
+    
+}
+
+
+
+
+/* media quaries */
+
+@media (max-width:991px){
+html{
+    font-size: 55%;
+}
+header{
+    padding: 2rem;
+}
+section{
+    padding: 2rem;
+}
+.home{
+     background-position: center;
+}
+}
+
+@media (max-width:768px){
+html .fa-bars{
+    display: block;
+}
+header .navbar{
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: #eee;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}  
+header #toggler:checked ~ .navbar {
+    clip-path: polygon(0 0, 100% 100%, 0 100%, 0 100%);
+}
+
+header .navbar a{
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background: #fff;
+    border: .1rem solid rgb(0, 0, .1);
+    display: block;
+}
+.home.content h3{
+    font-size: 5rem;
+}
+.home.content span{
+    font-size: 2.5rem;
+}
+
+}
+
+
+
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    }
+
+
+ 
+    @keyframes fadeInDown{
+        0%{
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    
+    
+    }
+    .continer{
+        min-height: 100vh;
+        width: 100%;
+        background-color:rgb(245, 231, 236);
+      
+    
+    
+    }
+    .Services_wellprer{
+        padding: 5% 8%;
+    }
+    .Services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    h1{
+        color: rgb(0, 0, 0);
+        font-size: srem;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: transparent;
+        letter-spacing: 4px;
+        background-color: rgb(255, 255, 255);
+        background: linear-gradient(8deg ,argb(8,52,83,1)0%,argb,41%(41,17,45,2)100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:transparent;
+        position: relative;
+    
+    
+    }
+    h1::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 10%;
+        height: 15%;
+        width: 80%;
+        border-radius:85% ;
+        background-color: hsl(325, 90%, 68%);
+    
+    }
+    h1 span{
+        position: absolute;
+        top: 100%;
+        left: 10%;
+        height: 8%;
+        width: 80%;
+        border-radius:80% ;
+        background-color: #e11f9d;
+        animation: anim 5s linear infinite;
+    }
+    @-o-keyframes anim{
+        95%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0%;
+            left: 88%;
+        }
+    }
+    .cords{
+        display: grid;
+        grid-template-columns:repeat(3,1fr) ;
+        gap: 30px;
+        margin-top: 80px;
+    }
+    .cords2{
+        height: 310px;
+        width: 320px;
+        background-color:rgb(240, 195, 209);
+        padding: 3% 8%;
+        border: 0.5px solid rgba(234, 41, 124, 0.895);
+        border-radius: 8px;
+        transition: .6s;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+    
+    
+    
+    }
+    .cords2 ::after{
+        content: "";
+        position: absolute;
+        top: 150%;
+        left: -200px;
+        width: 120%;
+        transform: rotate(50deg);
+        background-color: white;
+        height: 18px;
+        filter: blur(30px);
+        opacity: 0.5;
+        transition: 1s;
+    
+    }
+    .cords2 ::after :hover{
+        width: 225%;
+        top: -100%;
+    }
+    .cords2 i{
+        color: #fe4ea6;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 4.8rem;
+    
+    }
+    .cords2 h2{
+        color:black;
+        font-size: 2.4rem ;
+        font-weight: bolder;
+        letter-spacing: 1px;
+    }
+    .cords2 p{
+        text-align: center;
+        width: 100%;
+        margin: 12px 0;
+        color: rgba(92, 86, 89, 0.977);
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        font-weight: bold;
+        
+    
+    
+    }
+    .cords2:hover{
+        background-color: transparent;
+        transform: translate(-10px);
+        border-color: #b80c79;
+    
+    }
+    .cords2:hover i{
+        color: #ff89c4;
+    
+    }
+    @media screen and(max-width:120px){
+        .cords{
+            grid-template-columns: repeat(2,1fr);
+        }
+    
+    }
+    @media screen and(max-width:900px){
+        .cords{
+            grid-template-columns: repeat(2,1fr);
+        }
+    
+    }
+   
+
+
